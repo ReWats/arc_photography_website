@@ -204,6 +204,17 @@ ul {
 
 /*Footer section*/
 
+#footer h5 {
+    font-family:  "Spline Sans", sans-serif;
+    font-size: 1.5vw !important;
+    
+}
+
+#footer a {
+    font-family:  "Spline Sans", sans-serif;
+    font-size: 1vw !important;
+}
+
 .goodbye {
     display: flex;
     justify-content: center;
