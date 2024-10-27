@@ -205,7 +205,7 @@ ul {
 /*Footer section*/
 
 #footer h5 {
-    font-family:  "Spline Sans", sans-serif;
+    font-family:  "Spline Sans", sans-serif !important;
     font-size: 1.5vw !important;
     
 }
