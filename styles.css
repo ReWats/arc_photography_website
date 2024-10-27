@@ -2,7 +2,6 @@
 
 html {
     background-color: #fff;
-    margin: -8px;
 }
 
 /*Navbar styling*/
@@ -10,7 +9,7 @@ html {
 #navbar {
     display: flex;
     justify-content: space-between;
-    width: 110vw;
+    width: 100vw;
     height: auto;
     position: fixed;
     background-color: #fff;
@@ -153,6 +152,7 @@ ul {
     list-style: none;
     padding-bottom: 10vw;
     padding-right: 10vw;
+    font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(70, 53, 53);
 }
@@ -175,14 +175,9 @@ ul {
     margin-bottom: 0.5vw !important;
 }
 
- /* .info {
-    margin-top: 0;
-    font-size: 5rem;
-}*/
-
 .info {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 2vw;
+    font-size: 1.5vw;
 }
 .full-image {
     display: none;
