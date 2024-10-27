@@ -84,7 +84,7 @@ h1 {
 
 .lead1 {
     font-family: "Spline Sans", sans-serif !important;
-    font-size: 1.5vw !important;
+    font-size: 2vw !important;
 }
 
 
@@ -135,7 +135,7 @@ img {
 }
 
 .logo_container2 ul {
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-top: 5vw !important;
 }
 /*About section styling*/
