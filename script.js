@@ -27,4 +27,4 @@ clearButton.onclick = function() {
                 fullImage.style.display = 'none'; 
                 clearButton.style.display = 'none'; 
             }; 
-    });
+    
