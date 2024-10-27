@@ -215,6 +215,11 @@ ul {
     font-size: 1vw !important;
 }
 
+#footer p {
+    font-family:  "Spline Sans", sans-serif !important;
+    font-size: 1.5vw !important;
+}
+
 .goodbye {
     display: flex;
     justify-content: center;
