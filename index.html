@@ -96,8 +96,6 @@
   </section>
 </div>
   <!--Grid-->
-
-
   <div id="image_grid" class="grid">
     <img id="image" src="cows.jpeg" alt="A heard of happy cows eating from a trough in a sunny field." height="270px" data-info="Aheard of happy cows in Hampshire, UK. Available to buy as a print, please get in touch.">
     <img id="image" src="funghi.jpeg" alt="Image of a small wild funghi in the forest." width="400px;" height="270px" data-info="Small wild funghi. Available to buy as a print, please get in touch.">
@@ -118,72 +116,63 @@
 
   <button id="clearButton" class="clear-button">Clear Image</button>
 
-  <!--Contact Section-->
-  <div id="footer" class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="100" height="20"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <p class="text-body-secondary">LET'S GET IN TOUCH!</p>
-      </div>
-  
-      <div class="col mb-3">
-  
-      </div>
-  
-      <div class="col mb-3">
-        <h5></h5>
-      </div>
-  
-      <div class="col mb-3">
-        <h5 "Spline Sans", sans-serif !important;>INSTAGRAM</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="https://www.instagram.com/photography_arc_uk/profilecard/?igsh=aG12MXBnaXZ2MWk3" style="text-decoration: none; color: rgb(70, 53, 53);" class="nav-link p-0 text-body-secondary">photography_arc_uk</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5 "Spline Sans", sans-serif !important;>EMAIL</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">arc_photography_uk@com</a></li>
-        </ul>
-      </div>
-    </footer>
+  <!--Full size image displayed with description pulled from data-info-->  
+  <div class="clicked_image">
+<img id="fullImage" class="full-image" alt="Full Image">
+<div class="info" id="imageInfo"></div>
   </div>
+<!--Clear button to clear the current fullimage and description being shown-->
+  <div class="btn_container">
+    <button id="clearButton" class="clear-button" style="color: black !important;">Clear Image</button>
+</div>
 
-  <div class="goodbye"><H1>Thank you for visiting, come back soon!</H1></div>
-  <hr>
-
- <!-- <script>document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.grid img');
-    const infoDiv = document.getElementById('imageInfo');
-    const fullImage = document.getElementById('fullImage');
-    const clearButton = document.getElementById('clearButton');
-
-    images.forEach(image => {
-        image.onclick = function() {
-            const info = this.getAttribute('data-info');
-            const src = this.getAttribute('src');
-            infoDiv.textContent = info;
-                    fullImage.src = src;
-                    fullImage.style.display = 'block'; // Show the full image
-                    clearButton.style.display = 'block'; // Show the clear button
-
-                    // Scroll to the full image
-                    fullImage.scrollIntoView({ behavior: 'smooth' });
-        };
-    });
+<!-- Dropdown for print sizes -->
+<div id="dropdown">
+    <select id="printSize" style="display: none;">
+        <option value="">Select Print Size</option>
+        <option value="small">Small - A5 (148.5 x 210mm) £4.95</option>
+        <option value="medium">Medium - A4 (210mm x 297mm) £9.95</option>
+        <option value="large">Large - A3 (297mm x 420mm) £14.95</option>
+        <option value="xlarge">Extra Large - A2 (420mm x 594mm) £19.95</option>
+    </select>
+    <p id="priceDisplay" style="display: none;"></p>
+    <button id="buyNowButton" style="display: none;">Buy Now</button>
+    </div>
 
 
-// Clear functionality
-clearButton.onclick = function() {
-                infoDiv.textContent = ''; // Clear the info text
-                fullImage.style.display = 'none'; // Hide the full image
-                clearButton.style.display = 'none'; // Hide the clear button
-            }; 
-    });
-</script>-->
+<!--Basket section -->
+<div id="basket" style="display: none;">
+  <h2>Your Basket</h2>
+  <ul id="basketContents">
+  </ul>
+  <div class="total" id="totalPrice">Total: £0.00</div>
+  <div class="btn-container">
+      <button class="clear-button" id="clearBasketButton">Clear Basket</button>
+      <button id="checkoutButton">Checkout</button>
+  </div>
+</div>
+
+  <!--Footer Section-->
+  <footer id="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h5>Thank You For Visiting</h5>
+            <p>Let's stay in touch!</p>
+        </div>
+        <div class="footer-section">
+            <h5>Contact</h5>
+            <p>Email: ARCphotography@example.com</p>
+            <p>Phone: +123 456 789</p>
+        </div>
+        <div class="footer-section">
+            <h5>Follow Us</h5>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ARC Photography. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
