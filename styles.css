@@ -1,11 +1,10 @@
-/*global HTML styling*/
-
+/*Global styling for the web page*/
 html {
     background-color: #fff;
+    margin: 0;
 }
 
 /*Navbar styling*/
-
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -13,18 +12,12 @@ html {
     height: auto;
     position: fixed;
     background-color: #fff;
-    opacity: 1;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    padding-right: 13vw;
-    padding-left: 5vw;
-    margin-bottom: 10vw;
+    padding: 1vw 5vw;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /*Embedded link in button styling for navbar and footer*/
-
 a {
     text-decoration: none;
     color: rgb(70, 53, 53);
@@ -37,12 +30,11 @@ button {
     border: none;
 }
 
-button :hover {
+button:hover {
     color: grey;
 }
 
 /*Responsive hero styling; Bootstrap framework*/
-
 .py-5 {
     padding-top: 3rem !important;
     padding-bottom: 1rem !important;
@@ -54,12 +46,9 @@ button :hover {
     margin-top: 5vw;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+.container {
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
+    padding: 0 1rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -67,13 +56,8 @@ button :hover {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
 
-/*custom styling for headers in hero and logo*/
+/*Custom styling for headers in hero and logo*/
 h1 {
     font-family: "Calligraffitti", cursive;
     font-weight: 600;
@@ -84,81 +68,49 @@ h1 {
 
 .lead1 {
     font-family: "Spline Sans", sans-serif !important;
-    font-size: 1.5vw !important;
+    font-size: 2vw !important;
 }
 
-
-.logo_container1 {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-.logo_container2 {
+.logo_container1, .logo_container2 {
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 
-.lgo {
-    justify-content: flex-end;
+.lgo, .lgo2, .lgo3 {
     height: 12vw;
     border-radius: none !important;
-    box-shadow: (0,0,0,0) !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/*Styling for logo running along bottom of hero section*/
-
-.lgo2 {
-    height: 12vw;
-    margin-left: 5vw;
-    border-radius: none !important;
-    box-shadow: (0,0,0,0) !important;
-}
-
-.lgo3 {
-    height: 8vw;
-    margin-left: 15vw;
-    border-radius: none !important;
-    box-shadow: (0,0,0,0) !important;
-}
-
-/*Stying for images - add small border radius and box shadow for modern effect*/
-
+/*Image styling*/
 img {
     border-radius: 0.2vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.logo_container1 ul {
+.logo_container1 ul, .logo_container2 ul {
     margin-top: 5vw !important;
 }
 
-.logo_container2 ul {
-    font-size: 2vw;
-    margin-top: 5vw !important;
-}
 /*About section styling*/
-
 #about_me {
     display: flex;
     align-content: center;
     margin: 10vw;
-    
 }
 
 ul {
     align-content: end;
     list-style: none;
+    font-size: 2vw;
     padding-bottom: 10vw;
     padding-right: 10vw;
-    font-size: 1.5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(70, 53, 53);
 }
 
 /*Gallery section*/
-
 #image_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -170,15 +122,11 @@ ul {
 }
 
 #image_grid img {
-    width: "400px" !important; 
-    height: "270px" !important; 
+    width: 400px !important; 
+    height: 270px !important; 
     margin-bottom: 0.5vw !important;
 }
 
-.info {
-    margin-top: 2vw;
-    font-size: 1.5vw;
-}
 .full-image {
     display: none;
     max-width: 600px; 
@@ -186,42 +134,198 @@ ul {
 
 .clicked_image {
     display: grid;
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;  
     margin-left: 20vw;
-    margin-bottom: -5vw;
-    padding: 10vw;
+    padding: 1vw 10vw;
+    font-size: 1vw;
 }
 
 [data-info] {
+    margin-top: 1vw;
     font-family: "Spline Sans", sans-serif;
+    font-size: 1vw;
 }
 
-.clear-button {
-    margin-left: 47vw;
-    cursor: pointer;
-    display: none; 
-}
-
-/*Footer section*/
-
-#footer h5 {
-    font-family:  "Spline Sans", sans-serif !important;
-    font-size: 1.5vw !important;
-    
-}
-
-#footer a {
-    font-family:  "Spline Sans", sans-serif;
-    font-size: 1vw !important;
-}
-
-#footer p {
-    font-family:  "Spline Sans", sans-serif !important;
-    font-size: 1.5vw !important;
-}
-
-.goodbye {
+.btn_container {
     display: flex;
     justify-content: center;
-    margin-top: -12vw;
+    padding-bottom: 5vw;
 }
+
+.clear-button, #printSize, #buyNowButton, #checkoutButton, #clearBasketButton {
+    border-radius: 0.5vw;
+    border-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+/*Basket section*/
+#basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; 
+    border-radius: 0.5vw;
+    padding: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    margin: 2vw; 
+}
+
+#basket h2 {
+    font-family: "Spline Sans", sans-serif; 
+    font-size: 2.5vw; 
+    margin: 1vw 0; 
+    color: rgb(70, 53, 53); 
+}
+
+#basket ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 1vw 0; 
+    width: 100%; 
+    text-align: left; 
+}
+
+#basket li {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1vw; 
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+#basket li:last-child {
+    border-bottom: none; 
+}
+
+#basket .total {
+    font-weight: bold; 
+    font-size: 2vw; 
+    margin-top: 1.5vw; 
+}
+
+#basket .btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-top: 2vw; 
+}
+
+.clear-button, #checkoutButton {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 0.5vw; 
+    padding: 1vw 2vw; 
+    cursor: pointer; 
+    font-size: 1.5vw; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px; 
+    transition: background-color 0.3s; 
+}
+
+.clear-button:hover, #checkoutButton:hover {
+    background-color: #45a049; 
+}
+
+
+/* Footer section */
+#footer {
+    background-color: #fff; 
+    color: rgb(70, 53, 53); 
+    padding: 2rem 1rem; 
+    font-family: "Spline Sans", sans-serif; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    flex: 1; 
+    padding: 1rem; 
+    min-width: 200px; 
+}
+
+.footer-section h5 {
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+}
+
+.footer-section p, .footer-section a {
+    margin: 0.25rem 0; 
+    color: grey; 
+    text-decoration: none; 
+}
+
+.footer-section a:hover {
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 1rem; 
+    font-size: 0.9rem; 
+}
+
+/*Responsive styles using media queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4vw; 
+        margin-top: 15vw; 
+    }
+
+    #navbar {
+        flex-direction: column; 
+        padding: 1rem; 
+    }
+
+    .lead1 {
+        font-size: 3vw; 
+    }
+
+    #image_grid {
+        grid-template-columns: 1fr; 
+    }
+
+    button {
+        font-size: 3vw; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3vw; 
+        margin-top: 10vw; 
+    }
+
+    .lead1 {
+        font-size: 2.5vw; 
+    }
+
+    #navbar {
+        padding: 1.5rem 8vw; 
+    }
+
+    #image_grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5vw; 
+        margin-top: 20vw; 
+    }
+
+    .lead1 {
+        font-size: 2vw; 
+    }
+
+    #image_grid {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
