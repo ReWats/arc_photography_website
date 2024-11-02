@@ -88,6 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateBasket();
     };
 });
-});
+
   
     
