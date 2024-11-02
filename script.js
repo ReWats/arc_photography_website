@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.grid img');
     const infoDiv = document.getElementById('imageInfo');
     const fullImage = document.getElementById('fullImage');
@@ -86,6 +87,7 @@
         total = 0;
         updateBasket();
     };
+});
 });
   
     
